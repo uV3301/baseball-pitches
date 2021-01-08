@@ -1,0 +1,84 @@
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(51, 55, 77);
+}	
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	color: rgb(206, 206, 206);
+	font-family: Helvetica;
+}
+
+p,
+a,
+li,
+span,
+label,
+input,
+textarea {
+	color: rgb(168, 221, 215);
+	font-family: monospace;
+}
+a {
+	text-decoration: none;
+}
+.main-container {
+	width: 1400px;
+	margin:	0 auto;
+}
+.greeting-wrapper {
+	display: grid;
+	min-height: 10em;
+	text-align: center;
+	align-items: center;
+}
+.info-wrapper {
+	background-color: rgb(77, 84, 122);
+	display: grid;
+	border-radius: 10px 10px 10px 10px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 3em 40em;
+	grid-template-areas: 
+	"navbar navbar"	
+	"leftcol rightcol"
+	;
+}
+.navbar {
+	border-radius: 10px 10px 10px 10px;
+	grid-area: navbar;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid rgb(51, 55, 77);
+}
+.title {
+	padding: 25px;
+}
+#navigation {
+	margin: 0;
+	padding: 25px;
+}
+#navigation li {
+	display: inline;
+	margin-right: 5px;
+}
+.leftcol {
+	grid-area: leftcol;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+.rightcol {
+	grid-area: rightcol;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
